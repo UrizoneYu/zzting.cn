@@ -34,6 +34,9 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../images/favicon.png">
 
+  <!-- comment -->
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 <body>
@@ -179,6 +182,20 @@
                   </div>
                 </div>
               </div>
+
+              <div id="vcomments"></div>
+              <script>
+                  new Valine({
+                  el: '#vcomments' ,
+                  appId: 'VE7y7Rq5F1RhlzC3mHSqya39-gzGzoHsz',
+                  appKey: '8HJmqX1VuEGLp2X0uc5fO9df',
+                  notify:false,
+                  verify:false,
+                  avatar:'mm',
+                  placeholder: '亲，欢迎您的评论！（记得加上昵称哦~）'
+                  });
+              </script>
+              
             </div>
           </div>
         </div>
